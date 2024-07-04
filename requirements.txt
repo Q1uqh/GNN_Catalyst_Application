@@ -1,0 +1,9 @@
+dgl=2.1.0
+rdkit=2024.3.1
+torch_geometric=2.5.3
+scikit-learn=1.2.2
+tqdm=4.66.1
+torch=2.0.0+cpu
+timm=0.9.12
+numpy=1.24.3
+pandas=2.0.3

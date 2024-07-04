@@ -12,20 +12,18 @@ All datasets used for the experiments can be downloaded from the `/datasets` fol
 Use dataprocess.py to preprocess the datasets. This script will prepare the data for training.
 
 ## Model Architecture
-The gnn_model architecture is defined in model.py. You can review and modify this file if necessary.
+The model architecture is defined in gnn_model.py. You can review and modify this file if necessary.
 
 ## Training
 To train the model, run train.py. This script will use the preprocessed data and the defined model architecture to train the GNN.
 
 ## Citation
 If you find this work helpful, please consider citing it as follows:
-'''
-
+```
 @article{qiu2024application,
   title={An Application of Graph Neural Network in Pollution Abatement: Acceleration Heterogeneous Catalyst Design},
   author={Qiu, Qianhong and Du, Changming},
   journal={Materials Today Communications},
   year={2024}
 }
-
-'''
+```

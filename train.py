@@ -6,9 +6,8 @@ import sklearn
 from sklearn.metrics import r2_score
 from tqdm import tqdm
 from timm.scheduler.cosine_lr import CosineLRScheduler
+from torch_geometric.data import Batch
 
-def custom_collate_fn(batch):
-    return Batch.from_data_list(batch)
 train_data = makedataset(root='/path/test_data/')
 test_data = makedataset(root='/path/test_data/')
 
@@ -23,6 +22,8 @@ R2_VAL = []
 best_r2_val = -float('inf')
 best_model_path = './best_model.pth'
 
+def custom_collate_fn(batch):
+    return Batch.from_data_list(batch)
 for fold, (tr_idx, va_idx) in enumerate(kfold.split(train_data)):
     train_dataset = train_data[tr_idx]
     batch_data = DataLoader(train_dataset, batch_size=32, shuffle=True, collate_fn=custom_collate_fn)

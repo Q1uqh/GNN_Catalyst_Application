@@ -18,4 +18,5 @@ The model architecture is defined in gnn_model.py. You can review and modify thi
 To train the model, run train.py. This script will use the preprocessed data and the defined model architecture to train the GNN.
 
 ## Citation
-If you find this work helpful, please consider citing it as follows: Qiu, Q.; Du, C. An Application of Graph Neural Network in Pollution Abatement: Acceleration Heterogeneous Catalyst Design. Mater Today Commun. 2024, 109916. https://doi.org/10.1016/j.mtcomm.2024.109916
+If you find this work helpful, please consider citing it as follows:
+Qiu, Q.; Du, C. An Application of Graph Neural Network in Pollution Abatement: Acceleration Heterogeneous Catalyst Design. Mater Today Commun. 2024, 109916. https://doi.org/10.1016/j.mtcomm.2024.109916

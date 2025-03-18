@@ -8,7 +8,7 @@ from tqdm import tqdm
 from timm.scheduler.cosine_lr import CosineLRScheduler
 from torch_geometric.data import Batch
 
-train_data = makedataset(root='/path/test_data/')
+train_data = makedataset(root='/path/train_data/')
 test_data = makedataset(root='/path/test_data/')
 
 np.random.seed(0)
